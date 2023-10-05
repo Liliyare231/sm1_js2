@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(155, 160, 183);
+    transition: all 0.3 ease-in-out;
+    font-family: sans-serif;
+    color: #002d7a;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+header {
+    max-width: 1300px;
+    margin: 20px auto;
+    display: flex;
+    align-items: flex-start ;
+    justify-content: space-between;
+}
+
+.logoPractice {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.headerContent {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    
+}
+
+.menuList {
+    display: none;
+
+}
+
+.menuList.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.menuList2 {
+    display: none;
+
+}
+
+.menuList2.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.menuList3 {
+    display: none;
+
+}
+
+.menuList3.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
