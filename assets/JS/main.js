@@ -18,3 +18,22 @@ const menuList3 = document.querySelector('.menuList3')
 menuBtn3.addEventListener('click', ()=>{
     menuList3.classList.toggle('show')
 })
+
+// slider
+const track = document.querySelector('.track')
+const backButton = document.querySelector('.back')
+const nextButton = document.querySelector('.next')
+const countImg = document.querySelectorAll('.img').length;
+console.log(countImg);
+let pos = 0;
+let width = 250;
+nextButton.addEventListener('click', function(){
+    if(pos <= -(width *(countImg -3))) return
+    pos -= width
+    track.style.left = pos+'px'
+})
+backButton.addEventListener('click', function(){
+    if(pos >= 0) return
+    pos +=width
+    track.style.left = pos+'px'
+})

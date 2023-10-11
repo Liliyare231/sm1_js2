@@ -94,3 +94,66 @@ a {
     display: block;
     animation: fadeIn 0.5s ease-in-out;
 }
+
+/* slider */
+.sm2_slider{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+    align-items: center;
+}
+.container{
+    max-width: 1300px;
+    margin: 20px auto;
+}
+.slider-view{
+    width: 740px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.img{
+    width: 250px;
+    height: 300px;
+
+}
+
+.track{
+    
+    position: absolute;
+    top: 100px;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.btn{
+    display: flex;
+    gap: 30px;
+}
+.back{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    background: none;
+
+}
+.next{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    color: white;
+    border: 1px solid white;
+    background: none;
+}
